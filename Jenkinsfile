@@ -7,7 +7,10 @@ pipeline{
     stages {
         stage('build master'){
             when {
-                changeRequest()
+                // When PR IS Created 
+                // changeRequest()
+                // When Pr is created with the Title RELEASE-
+                changeRequest title: "RELEASE-"
             }
 
             steps{
