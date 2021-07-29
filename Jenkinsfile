@@ -15,7 +15,7 @@ pipeline{
             }
         }
 
-        stages('build dev'){
+        stage('build dev'){
             when {
                 branch 'dev'
             }
