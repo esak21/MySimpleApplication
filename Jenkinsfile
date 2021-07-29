@@ -7,20 +7,11 @@ pipeline{
     stages {
         stage('build master'){
             when {
-                branch 'master'
+                changeRequest()
             }
 
             steps{
                 echo "Building the master"
-            }
-        }
-
-        stage('build dev'){
-            when {
-                branch 'dev'
-            }
-            steps {
-                echo "Building the dev"
             }
         }
     }
