@@ -1,1 +1,1 @@
-FROM ubuntu:latest
+FROM ubuntu:19.04
